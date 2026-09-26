@@ -1,0 +1,583 @@
+/* SHOP PAGE */
+
+
+.shop {
+    width: 100%;
+    max-width: 1240px;
+    margin: 35px auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+
+
+/* FILTERS */
+
+
+.filters {
+    width: 235px;
+    flex-shrink: 0;
+
+    border: 1px solid #0000001a;
+    border-radius: 20px;
+
+    padding: 22px 20px;
+}
+
+
+/* Filter title */
+
+.filter-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #0000001a;
+}
+
+.filter-title h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.filter-title span {
+    font-size: 20px;
+    color: #777;
+}
+
+
+/* Categories */
+
+.filter-category {
+    padding: 10px 0 15px;
+
+    border-bottom: 1px solid #0000001a;
+}
+
+.filter-category div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 13px 0;
+
+    font-size: 14px;
+    color: #666;
+}
+
+.filter-category span {
+    font-size: 20px;
+}
+
+
+
+/* FILTER BOX */
+
+
+.filter-box {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #0000001a;
+}
+
+.filter-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.filter-heading h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.filter-heading span {
+    color: #777;
+}
+
+
+
+/* PRICE */
+
+.price-range {
+    position: relative;
+
+    width: 100%;
+    height: 20px;
+
+    margin-bottom: 5px;
+}
+
+.price-range .line {
+    position: absolute;
+
+    width: 85%;
+    height: 4px;
+
+    background-color: #000;
+
+    left: 7%;
+    top: 8px;
+}
+
+.price-range .circle {
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: #000;
+
+    border-radius: 50%;
+
+    top: 1px;
+}
+
+.price-range .circle-left {
+    left: 3%;
+}
+
+.price-range .circle-right {
+    right: 3%;
+}
+
+.price-values {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   COLORS
+========================= */
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    padding-right: 5px;
+}
+
+.color {
+    width: 21px;
+    height: 21px;
+
+    border-radius: 50%;
+
+    border: 1px solid #00000015;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+}
+
+.green {
+    background-color: #19b52c;
+}
+
+.red {
+    background-color: #e51f2a;
+}
+
+.yellow {
+    background-color: #f1d900;
+}
+
+.orange {
+    background-color: #e87816;
+}
+
+.blue {
+    background-color: #1c9bda;
+}
+
+.dark-blue {
+    background-color: #3039e8;
+}
+
+.purple {
+    background-color: #4718d7;
+}
+
+.pink {
+    background-color: #d41aa9;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: #263445;
+}
+
+.color.selected {
+    color: white;
+}
+
+
+/* =========================
+   SIZE
+========================= */
+
+.sizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sizes button {
+    border: none;
+
+    background-color: #f5f5f5;
+
+    color: #666;
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+.sizes button.active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* DRESS STYLE*/
+
+.style-list div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 13px 0;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+.style-list span {
+    font-size: 20px;
+}
+
+/*  APPLY FILTER */
+
+
+.apply-filter {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #000;
+    color: #fff;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.products-area {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/*   HEADER */
+
+.products-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+}
+
+.products-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.products-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.products-info p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+.sort {
+    color: #777;
+
+    font-size: 12px;
+}
+
+.sort strong {
+    color: #000;
+    font-weight: 600;
+}
+
+.sort span {
+    margin-left: 5px;
+}
+
+
+/*    PAGINATION*/
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 35px;
+    padding-top: 20px;
+
+    border-top: 1px solid #0000001a;
+}
+
+.pagination button {
+    border: none;
+    background: none;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pages button {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 8px;
+}
+
+.pages .current {
+    background-color: #f0f0f0;
+}
+
+
+
+/* NEWSLETTER */
+
+.newsletter {
+    width: 100%;
+
+    margin-top: 45px;
+
+    background-color: #000;
+
+    padding: 35px 0;
+}
+
+.newsletter-content {
+    max-width: 1240px;
+
+    margin: auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.newsletter h2 {
+    color: #fff;
+
+    font-size: 30px;
+    line-height: 1.1;
+
+    font-weight: 800;
+}
+
+.newsletter-form {
+    width: 350px;
+}
+
+.email-input {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    background-color: #fff;
+
+    border-radius: 25px;
+}
+
+.email-input span {
+    color: #777;
+}
+
+.email-input input {
+    width: 100%;
+
+    margin-left: 10px;
+
+    border: none;
+    outline: none;
+
+    font-family: inherit;
+}
+
+.newsletter-form button {
+    width: 100%;
+    height: 42px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #fff;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .shop {
+        padding: 0 15px;
+    }
+
+    .filters {
+        width: 210px;
+    }
+
+    .products-info p {
+        display: none;
+    }
+
+    .newsletter-content {
+        padding: 0 20px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .shop {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .filters {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .products-header {
+        align-items: flex-start;
+    }
+
+    .products-header h1 {
+        font-size: 26px;
+    }
+
+    .products-info {
+        display: block;
+    }
+
+    .sort {
+        font-size: 11px;
+    }
+
+    .pagination {
+        gap: 10px;
+    }
+
+    .pages {
+        gap: 2px;
+    }
+
+    .newsletter-content {
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 0 20px;
+    }
+
+    .newsletter h2 {
+        font-size: 25px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+
+}
+
+.products,
+.top-selling {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px 20px;
+}
+
+.products .card,
+.top-selling .card {
+    width: calc((100% - 40px) / 3);
+    flex-shrink: 0;
+}
+
+.products .card>img,
+.top-selling .card>img {
+    width: 100%;
+    display: block;
+}
